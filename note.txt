@@ -1,0 +1,13 @@
+Client {
+website-responsive : px-2 xl:px-10;
+
+header {
+    z-index: z-40;
+    height : h-15
+    }
+nav{
+    z: 50
+}
+main{}
+fotter{}
+}
