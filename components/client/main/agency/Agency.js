@@ -1,3 +1,4 @@
+import AgencyClient from "./AgencyClient";
 import AgencyHero from "./AgencyHero";
 import AgencyTeam from "./AgencyTeam";
 import AgencyVision from "./AgencyVision";
@@ -8,6 +9,7 @@ const Agency = () => {
       <AgencyHero />
       <AgencyVision />
       <AgencyTeam />
+      <AgencyClient />
     </>
   );
 };

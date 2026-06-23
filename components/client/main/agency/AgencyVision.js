@@ -29,16 +29,15 @@ const AgencyVision = () => {
       </div>
 
       {/* content  */}
-      <div className="w-full py-10 grid grid-cols-12 text-(--text-white) ga[-4] gap-10 xl:gap-20">
-        <div className="col-span-12 xl:col-span-8 flex flex-col gap-10">
+      <div className="w-full py-10 grid grid-cols-1 x;l:grid-cols-12 text-(--text-white) ga[-4] gap-10 xl:gap-20">
+        <div className="xl:col-span-8 flex flex-col gap-10">
           <p className="text-3xl xl:text-5xl">
             {`Right from the start, we've carved out our niche with a bold
             approach. Crafting immersive experiences that authentically reflect
             your essence relies on seamlessly blending your vision with our
             expertise.`}
           </p>
-
-          <div className="flex items-end justify-start gap-2 w-full h-[50vh] xl:h-screen">
+          <div className="flex items-end justify-start gap-2 w-full h-[50vh] xl:h-screen ">
             <Image
               src={agency02}
               alt="agency-image"
@@ -56,7 +55,7 @@ const AgencyVision = () => {
           </div>
         </div>
 
-        <div className="col-span-12 xl:col-span-4 h-full w-full flex flex-col  justify-end">
+        <div className="xl:col-span-4 h-full w-full flex flex-col  justify-end">
           {agencyVision?.map((item, index) => (
             <div key={index} className="flex items-center gap-5 py-10 border-y">
               <FaStarOfLife className="text-5xl" />
