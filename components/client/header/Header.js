@@ -29,8 +29,8 @@ const Header = () => {
           className="group/header-btn p-1 bg-(--bg-black) text-(--text-white) font-semibold uppercase rounded-full flex items-center justify-center transitions cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
-          <span className="p-4">menu</span>
-          <span className="h-2 w-2 group-hover/header-btn:h-10 group-hover/header-btn:w-10 rounded-full bg-(--bg-orange) text-xl flex justify-center items-center m-4 group-hover/header-btn:m-0 transitions">
+          <span className="p-2 xl:p-4">menu</span>
+          <span className="h-2 w-2 group-hover/header-btn:h-10 group-hover/header-btn:w-10 rounded-full bg-(--bg-orange) text-xl flex justify-center items-center m-2 xl:m-4 group-hover/header-btn:m-0 transitions">
             <HiMenuAlt4 className="hidden group-hover/header-btn:flex " />
           </span>
         </button>

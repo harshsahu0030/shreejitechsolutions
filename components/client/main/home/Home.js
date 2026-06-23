@@ -1,7 +1,7 @@
-import React from "react";
+"use client";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <div className="min-h-screen flex flex-col"></div>;
 };
 
 export default Home;

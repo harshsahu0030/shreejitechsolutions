@@ -58,3 +58,9 @@ export const emailDetails = [
     url: "#",
   },
 ];
+
+export const agencyVision = [
+  "We believe in building relationships, not just delivering services. Every decision, design, or strategy is tailored to our client’s unique goals..",
+  "The digital world changes fast — and so do we. Our team actively learns and adapts to bring you modern, future-ready solutions.",
+  "Complex problems don’t always need complex solutions. We design with clarity, code with efficiency, and market with intent",
+];

@@ -169,7 +169,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             muted
             playsInline
             preload="none"
-            poster={HighThumbnail.src}
+            poster={HighThumbnail}
           >
             <source src={High} type="video/mp4" />
             Your browser does not support the video tag.

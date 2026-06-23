@@ -1,7 +1,11 @@
-import React from "react";
+import Agency from "@/components/client/main/agency/Agency";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Agency />
+    </>
+  );
 };
 
 export default page;
