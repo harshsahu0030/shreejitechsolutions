@@ -1,10 +1,13 @@
 import Header from "@/components/client/header/Header";
+import PageLoader from "@/components/client/providers/PageLoader";
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <Header />
-      {children}
+      <PageLoader>
+        <Header />
+        {children}
+      </PageLoader>
     </>
   );
 }

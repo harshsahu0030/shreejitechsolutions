@@ -10,10 +10,10 @@ const AgencyTeam = () => {
       className="min-h-screen w-full py-25 responsives bg-(--bg-pink)"
     >
       {/* team-header */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-5">
+      <div className="flex flex-col xl:flex-row justify-between gap-5">
         <h2 className="text-[12vw] leading-[12vw] font-semibold">Team</h2>
 
-        <p className="text-xl font-medium w-full xl:w-[70%]">
+        <p className="text-xl font-medium w-full xl:w-[40%] flex self-center">
           {`
           Our ambition has always been to continue to evolve, to learn, to
           surpass ourselves. Our team, united, proud, is made up of true

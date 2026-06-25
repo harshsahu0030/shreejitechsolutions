@@ -46,19 +46,20 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         .timeline({ paused: true })
         .from(navRef.current, {
           y: "100%",
-          duration: 0.5,
           opacity: 0,
+          duration: 0.3,
         })
         .from(".nav-links", {
           y: 50,
           opacity: 0,
           stagger: 0.1,
+          duration: 0.2,
         })
         .from(".nav-assets", {
           y: 50,
           opacity: 0,
-          stagger: 0.2,
-          duration: 0.3,
+          stagger: 0.1,
+          duration: 0.2,
         });
     },
     { scope: navRef },

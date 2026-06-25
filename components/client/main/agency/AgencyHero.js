@@ -4,7 +4,7 @@ const AgencyHero = () => {
   return (
     <section
       areia-label="agency-hero"
-      className="min-h-screen py-25 w-full responsives "
+      className="min-h-screen py-25 pt-40 w-full responsives "
     >
       <div className="w-full grid xl:grid-cols-2">
         <div className="w-fit pb-5 pt-5  border-b-2 border-(--bg-black) order-2 xl:order-1">

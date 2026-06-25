@@ -5,14 +5,47 @@ import Logo from "@/public/logo/logoLightTransparent.webp";
 import { HiMenuAlt4 } from "react-icons/hi";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const headerRef = useRef();
+
+  // gsap
+  useGSAP(() => {
+    const showAnim = gsap
+      .from(headerRef.current, {
+        yPercent: -100,
+        duration: 0.3,
+        ease: "power2.inOut",
+      })
+      .progress(1);
+
+    ScrollTrigger.create({
+      start: "top top",
+      end: "max",
+      onUpdate: (self) => {
+        if (self.direction === -1 || self.scroll() < 50) {
+          showAnim.play(); // Show the header
+        } else {
+          showAnim.reverse(); // Hide the header
+        }
+      },
+    });
+  });
+
   return (
     <>
-      <header className="fixed top-0 left-0 z-40 responsives h-25 w-full flex justify-between items-end">
+      <header
+        ref={headerRef}
+        className="fixed top-0 left-0 z-40 responsives h-25 w-full flex justify-between items-end"
+      >
         {/* logo  */}
         <Link href="/">
           <Image

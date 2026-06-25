@@ -29,7 +29,7 @@ const AgencyVision = () => {
       </div>
 
       {/* content  */}
-      <div className="w-full py-10 grid grid-cols-1 x;l:grid-cols-12 text-(--text-white) ga[-4] gap-10 xl:gap-20">
+      <div className="w-full py-10 grid grid-cols-1 xl:grid-cols-12 text-(--text-white) ga[-4] gap-10 xl:gap-20">
         <div className="xl:col-span-8 flex flex-col gap-10">
           <p className="text-3xl xl:text-5xl">
             {`Right from the start, we've carved out our niche with a bold
