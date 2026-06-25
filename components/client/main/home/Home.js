@@ -1,7 +1,17 @@
 "use client";
 
+import ExpertisSkills from "../expertise/ExpertisSkills";
+import HomeCTA from "./HomeCTA";
+import OurAgency from "./OurAgency";
+
 const Home = () => {
-  return <div className="min-h-screen flex flex-col"></div>;
+  return (
+    <>
+      <ExpertisSkills />
+      <OurAgency />
+      <HomeCTA />
+    </>
+  );
 };
 
 export default Home;

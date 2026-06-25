@@ -56,7 +56,7 @@ const ExpertisSkills = () => {
           return (
             <div
               key={item?.id}
-              className={`expert-${item?.id}  responsives h-full w-full  absolute top-0 left-0 pt-[25vw] xl:pt-[20vw]  grid grid-rows-3 xl:grid-cols-3  xl:grid-rows-1 gap-5 ${item?.id === 0 ? "bg-(--bg-blue)" : item?.id === 1 ? "bg-(--bg-pink)" : item?.id === 2 ? "bg-(--bg-green)" : "bg-(--bg-white)"}`}
+              className={`expert-${item?.id}  responsives h-full w-full  absolute top-0 left-0 pt-[25vw] xl:pt-[20vw]  grid grid-rows-3 xl:grid-cols-3  xl:grid-rows-1 gap-5 ${item?.id === 0 ? "bg-(--bg-blue)" : item?.id === 1 ? "bg-(--bg-pink)" : item?.id === 2 ? "bg-(--bg-green)" : "bg-(--bg-orange)"}`}
             >
               {/* head  */}
               <div className="h-full w-full flex items-center">

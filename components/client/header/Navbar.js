@@ -23,7 +23,7 @@ const externalLinkProps = {
   rel: "noopener noreferrer",
 };
 
-const NavLinks = ({ item }) => {
+export const NavLinks = ({ item }) => {
   return (
     <Link
       href={item.url}

@@ -20,10 +20,10 @@ const ExpertiseHero = () => {
           y: -100,
         })
         .from(".expert-circle", {
-          xPercent: 100,
-          yPercent: 100,
+          xPercent: 50,
+          yPercent: 50,
+          duration: 2,
           stagger: 0.5,
-          duration: 3,
           ease: "expo.inOut",
         });
     },

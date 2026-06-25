@@ -47,6 +47,20 @@ export const addressDetails = [
   },
 ];
 
+export const legalPolicy = [
+  {
+    label: "Legal Policy",
+    url: "india",
+  },
+];
+
+export const end = [
+  {
+    label: "shreeji tech solutions @2026",
+    url: "india",
+  },
+];
+
 export const phoneDetails = [
   {
     name: "phone",
@@ -58,7 +72,7 @@ export const phoneDetails = [
 export const emailDetails = [
   {
     name: "email",
-    label: "info@shreejitechsolutions.in",
+    label: "info@shreejitech solutions.in",
     url: "#",
   },
 ];
@@ -93,5 +107,65 @@ export const expertiseList = [
     title: "Digital Experience",
     description:
       "Showcase / Website / Front-end / Back-end (CMS) / CSS Animations / Interactions / Digital experience / Shopify / Wordpress / GSAP",
+  },
+];
+
+export const expertiseServiceslist = [
+  {
+    id: 1,
+    title: "Website design & Development",
+  },
+  {
+    id: 2,
+    title: "Lead Generation",
+  },
+  {
+    id: 3,
+    title: "Search Engine Optimization",
+  },
+  {
+    id: 4,
+    title: "Design, Promotion and Branding",
+  },
+  {
+    id: 5,
+    title: "Google Ads and PPC Campaigns",
+  },
+  {
+    id: 6,
+    title: "Performance Marketing",
+  },
+  {
+    id: 7,
+    title: "Content and Blog Writing",
+  },
+  {
+    id: 8,
+    title: "Social Media Managment",
+  },
+  {
+    id: 9,
+    title: "Photograpghy and Shoots",
+  },
+];
+
+export const agencyMotive = [
+  {
+    id: 1,
+    title: "We like to keep things simple.",
+    description:
+      "In an era of excessive protocols, we advocate for normalcy and a certain lightness. Without grand speeches? Without any speeches at all.",
+  },
+  {
+    id: 2,
+    title: "Go with common sense.",
+    description:
+      "Master cutting-edge techniques to be able to imagine anything, but use only those that the project justifies, without any show of force.",
+  },
+  {
+    id: 3,
+    title: "The customer is not king.",
+    description:
+      "And neither do we, for that matter. At the agency, good decisions have only one king to rule them: your user.",
   },
 ];
