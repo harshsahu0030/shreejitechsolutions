@@ -1,5 +1,11 @@
+import Service from "@/components/client/main/expertise/service/Service";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Service />
+    </>
+  );
 };
 
 export default page;

@@ -7,6 +7,7 @@ import agency02 from "@/public/agency/agency02.avif";
 import { expertiseList } from "@/data/siteConfig";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import CommonLink from "../../providers/CommonLink";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,7 +22,7 @@ const ExpertisSkills = () => {
           trigger: expertRef.current,
           start: "top top",
           end: "+3000",
-          scrub: 2,
+          scrub: 1,
           pin: true,
         },
       });
@@ -29,7 +30,6 @@ const ExpertisSkills = () => {
       for (let i = 1; i <= 4; i++) {
         tl.from(`.expert-${i}`, {
           yPercent: 100,
-          ease: "none",
         }).from(`.expert-${i} img`, {
           scale: 0.5,
           opacity: 0,
@@ -70,8 +70,7 @@ const ExpertisSkills = () => {
                 <Image
                   src={agency02}
                   alt="agency-image"
-                  height={300}
-                  width={300}
+                  sizes="(max-width: 1280px) 100vw, 50vw"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -82,12 +81,7 @@ const ExpertisSkills = () => {
                   {item?.description}
                 </p>
 
-                <Link
-                  href={"/contact"}
-                  className="py-3 px-6 w-fit rounded-full border-2 border-(--bg-black) font-semibold text-sm transitions uppercase flex items-center gap-2 hover:bg-(--bg-black) hover:text-(--text-white)"
-                >
-                  Contact Us <FiArrowUpRight />
-                </Link>
+                <CommonLink label={"contact us"} url="/contact" />
               </div>
             </div>
           );

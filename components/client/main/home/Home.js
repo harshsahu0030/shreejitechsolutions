@@ -1,7 +1,6 @@
 "use client";
 
 import ExpertisSkills from "../expertise/ExpertisSkills";
-import HomeCTA from "./HomeCTA";
 import OurAgency from "./OurAgency";
 
 const Home = () => {
@@ -9,7 +8,6 @@ const Home = () => {
     <>
       <ExpertisSkills />
       <OurAgency />
-      <HomeCTA />
     </>
   );
 };

@@ -4,7 +4,6 @@ import Image from "next/image";
 import agency02 from "@/public/agency/agency02.avif";
 import { BsArrowDownCircle } from "react-icons/bs";
 
-
 const ContactHero = () => {
   return (
     <section
@@ -24,9 +23,9 @@ const ContactHero = () => {
           <Image
             src={agency02}
             alt="agency-image"
-            height={300}
-            width={300}
-            className="h-[30vh] w-full xl:w-[80%] object-cover"
+            fill
+            sizes="(max-width: 1280px) 100vw, 50vw"
+            className="object-cover"
           />
         </div>
       </div>

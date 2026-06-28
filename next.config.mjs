@@ -2,6 +2,17 @@
 const nextConfig = {
   reactCompiler: true,
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.pinimg.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+
   turbopack: {
     rules: {
       "*.mp4": {

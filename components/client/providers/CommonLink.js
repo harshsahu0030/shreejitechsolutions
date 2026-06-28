@@ -7,11 +7,11 @@ const CommonLink = ({ label, url }) => {
   return (
     <Link
       href={url}
-      className="group/header-btn p-1 bg-(--bg-black) text-(--text-white) font-semibold uppercase rounded-full flex items-center justify-center transitions cursor-pointer w-fit"
+      className="group/common-btn p-1 font-semibold uppercase rounded-full flex items-center justify-center transitions cursor-pointer w-fit hover:bg-(--bg-black) border-2 hover:text-(--text-white) hover:border-(--bg-black)"
     >
-      <span className="p-2 xl:p-4 uppercase">{label}</span>
-      <span className="h-2 w-2 group-hover/header-btn:h-10 group-hover/header-btn:w-10 rounded-full bg-(--bg-white) text-xl flex justify-center items-center m-2 xl:m-4 group-hover/header-btn:m-0 transitions">
-        <LuArrowUpRight className="hidden group-hover/header-btn:flex text-(--text-black)" />
+      <span className="p-2 xl:p-3 uppercase">{label}</span>
+      <span className="h-2 w-2 group-hover/common-btn:h-10 group-hover/common-btn:w-10 rounded-full bg-(--bg-black) text-xl flex justify-center items-center m-2 xl:m-4 group-hover/common-btn:m-0 transitions group-hover/common-btn:bg-(--bg-white)">
+        <LuArrowUpRight className="hidden group-hover/common-btn:flex text-(--text-black)" />
       </span>
     </Link>
   );
