@@ -23,8 +23,8 @@ const ContactHero = () => {
           <Image
             src={agency02}
             alt="agency-image"
-            fill
-            sizes="(max-width: 1280px) 100vw, 50vw"
+            height={300}
+            width={300}
             className="object-cover"
           />
         </div>
