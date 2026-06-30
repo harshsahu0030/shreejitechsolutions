@@ -1,7 +1,6 @@
 "use client";
 
 import Breadcrumbs from "@/components/client/providers/Breadcrumbs";
-import placeHolderImage from "@/public/placeHolderImage.avif";
 import Image from "next/image";
 
 const ServiceHero = ({ service = {}, bgColor }) => {
@@ -16,10 +15,7 @@ const ServiceHero = ({ service = {}, bgColor }) => {
         <div className="xl:col-span-7 flex gap-2 h-[60vh] xl:h-screen">
           <div className="w-[70%] h-full pb-20">
             <Image
-              src={
-                service?.services?.topMainImage?.node?.sourceUrl ||
-                placeHolderImage
-              }
+              src={service?.services?.topMainImage?.node?.sourceUrl}
               alt={
                 service?.services?.topMainImage?.node?.altText ||
                 "Website-Image"

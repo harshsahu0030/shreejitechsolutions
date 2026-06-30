@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import placeHolderImage from "@/public/placeHolderImage.avif";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,7 +93,7 @@ const ExpertiseServices = ({ services = [] }) => {
           {services?.services.map((item, index) => (
             <div key={index} className="slide absolute inset-0">
               <Image
-                src={item.featuredImage?.node?.sourceUrl || placeHolderImage}
+                src={item.featuredImage?.node?.sourceUrl}
                 alt={item.featuredImage?.node?.altText || "Service Image"}
                 fill
                 sizes="(max-width: 1280px) 100vw, 50vw"

@@ -24,9 +24,6 @@ const nextConfig = {
       "*.mp4": {
         type: "asset",
       },
-      "*.avif": {
-        type: "asset",
-      },
       "*.svg": {
         type: "asset",
       },
