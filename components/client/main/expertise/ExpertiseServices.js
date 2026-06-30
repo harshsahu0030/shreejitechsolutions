@@ -86,8 +86,8 @@ const ExpertiseServices = ({ services = [] }) => {
             {services?.map((item, index) => (
               <div key={index} className="slide absolute inset-0">
                 <Image
-                  src={item.featuredImage?.node?.sourceUrl}
-                  alt={item.featuredImage?.node?.altText || "Service Image"}
+                  src={item?.featuredImage?.node?.sourceUrl}
+                  alt={item?.featuredImage?.node?.altText || "Service Image"}
                   fill
                   sizes="(max-width: 1280px) 100vw, 50vw"
                   className="object-cover"
@@ -108,7 +108,7 @@ const ExpertiseServices = ({ services = [] }) => {
                 <span className="uppercase font-semibold">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span className="uppercase font-semibold">{item.title}</span>
+                <span className="uppercase font-semibold">{item?.title}</span>
               </Link>
             ))}
           </div>

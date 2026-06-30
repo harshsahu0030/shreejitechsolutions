@@ -1,5 +1,5 @@
 export default async function graphqlRequest(query) {
-  const url = process.env.NEXT_CONTENT_API;
+  const url = "https://content.shreejitechsolutions.in/graphql";
   const headers = { "Content-Type": "application/json" };
 
   const res = await fetch(url, {
