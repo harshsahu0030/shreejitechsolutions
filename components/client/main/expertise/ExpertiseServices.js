@@ -106,7 +106,7 @@ const ExpertiseServices = ({ services }) => {
         {/* Images */}
         <div className="relative ml-6 flex-1 overflow-hidden min-h-[500px]">
           {serviceList.map((item, index) => {
-            const imageUrl = item?.featuredImage?.node?.sourceUrl;
+            const imageUrl = item?.featuredImage?.node?.sourceUrl || "";
             const alt =
               item?.featuredImage?.node?.altText || item?.title || "Service";
 
