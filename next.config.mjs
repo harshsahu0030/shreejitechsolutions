@@ -6,6 +6,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "content.shreejitechsolutions.in",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "i.pinimg.com",
         port: "",
         pathname: "/**",

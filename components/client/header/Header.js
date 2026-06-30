@@ -47,13 +47,13 @@ const Header = () => {
         className="fixed top-0 left-0 z-40 responsives h-25 w-full flex justify-between items-end"
       >
         {/* logo  */}
-        <Link href="/">
+        <Link href="/" className="h-full w-fit flex items-end">
           <Image
             src={Logo}
             alt="Shreeji-Text-Solutions-Logo"
-            height={100}
-            width={100}
-            className="h-full object-contain hover:scale-105 transitions"
+            height={200}
+            width={200}
+            className="h-20 w-auto object-contain hover:scale-105 transitions"
           />
         </Link>
 

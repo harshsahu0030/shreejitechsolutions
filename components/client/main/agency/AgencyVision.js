@@ -37,21 +37,30 @@ const AgencyVision = () => {
             your essence relies on seamlessly blending your vision with our
             expertise.`}
           </p>
-          <div className="flex items-end justify-start gap-2 w-full h-[50vh] xl:h-screen ">
-            <Image
-              src={agency02}
-              alt="agency-image"
-              height={300}
-              width={300}
-              className="h-full w-fit object-contain"
-            />
-            <Image
-              src={agency01}
-              alt="agency-image"
-              height={300}
-              width={300}
-              className="h-1/3 w-fit object-contain"
-            />
+
+          <div className="w-full flex gap-2 h-[60vh] xl:h-screen ">
+            <div className="w-[70%] h-full">
+              <Image
+                src={agency01}
+                alt="agency-image"
+                height={300}
+                width={300}
+                className="h-full w-full object-cover"
+                loading="lazy"
+                placeholder="blur"
+              />
+            </div>
+            <div className="w-[30%] h-full flex items-end">
+              <Image
+                src={agency02}
+                alt="agency-image"
+                height={300}
+                width={300}
+                className="w-full object-cover"
+                loading="lazy"
+                placeholder="blur"
+              />
+            </div>
           </div>
         </div>
 

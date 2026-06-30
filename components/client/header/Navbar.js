@@ -94,14 +94,13 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       }`}
     >
       <div className="responsive min-h-25 max-h-25 flex justify-between items-end">
-        <Link href="/">
+        <Link href="/" className="h-full w-fit flex items-end">
           <Image
             src={Logo}
             alt="Shreeji-Text-Solutions-Logo"
-            className="h-full object-contain hover:scale-105 transitions"
-            height={100}
-            width={100}
-            loading="lazy"
+            height={200}
+            width={200}
+            className="h-20 w-auto object-contain hover:scale-105 transitions"
           />
         </Link>
 

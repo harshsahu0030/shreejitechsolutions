@@ -5,12 +5,12 @@ import ExpertiseHero from "./ExpertiseHero";
 import ExpertiseServices from "./ExpertiseServices";
 import ExpertisSkills from "./ExpertisSkills";
 
-const Expertise = () => {
+const Expertise = (services) => {
   return (
     <>
       <ExpertiseHero />
       <ExpertisSkills />
-      <ExpertiseServices />
+      <ExpertiseServices services={services} />
       <CTA />
     </>
   );

@@ -1,9 +1,17 @@
+"use client";
+
+import CTA from "@/components/client/providers/CTA";
 import ServiceHero from "./ServiceHero";
 
-const Service = () => {
+const Service = ({ service = {}, bgColor = "orange" }) => {
   return (
     <>
-      <ServiceHero />
+      <ServiceHero service={service} bgColor={bgColor} />
+      <CTA
+        label="Interested in our expertise"
+        description="It's this way"
+        bgColor={bgColor}
+      />
     </>
   );
 };

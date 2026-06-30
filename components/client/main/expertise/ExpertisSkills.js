@@ -5,14 +5,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import agency02 from "@/public/agency/agency02.avif";
 import { expertiseList } from "@/data/siteConfig";
-import Link from "next/link";
-import { FiArrowUpRight } from "react-icons/fi";
 import CommonLink from "../../providers/CommonLink";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ExpertisSkills = () => {
   const expertRef = useRef(null);
+
 
   //expertise
   useGSAP(
@@ -27,7 +26,7 @@ const ExpertisSkills = () => {
         },
       });
 
-      for (let i = 1; i <= 4; i++) {
+      for (let i = 1; i <= 3; i++) {
         tl.from(`.expert-${i}`, {
           yPercent: 100,
         }).from(`.expert-${i} img`, {
