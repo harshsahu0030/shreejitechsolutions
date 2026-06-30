@@ -5,13 +5,13 @@ import React from "react";
 const page = async () => {
   const services = await getAllServices();
 
-
-
-  return (
-    <>
-      <Expertise services={services} />
-    </>
-  );
+  if (services) {
+    return (
+      <>
+        <Expertise services={services} />
+      </>
+    );
+  }
 };
 
 export default page;

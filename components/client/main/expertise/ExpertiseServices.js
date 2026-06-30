@@ -59,8 +59,6 @@ const ExpertiseServices = ({ services = [] }) => {
           .to(slides[i], { autoAlpha: 1, duration: 0.5 }, i - 0.5);
       });
 
-      // Optional: Return a cleanup function if you need to reset specific inline styles
-      // when resizing back down to mobile. GSAP handles ScrollTrigger cleanup automatically!
       return () => {
         gsap.set([".fill", slides, listItems], { clearProps: "all" });
       };

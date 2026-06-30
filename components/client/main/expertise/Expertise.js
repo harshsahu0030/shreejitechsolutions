@@ -10,7 +10,7 @@ const Expertise = ({ services = [] }) => {
     <>
       <ExpertiseHero />
       <ExpertisSkills />
-      <ExpertiseServices services={services} />
+      {services && <ExpertiseServices services={services} />}
       <CTA />
     </>
   );
