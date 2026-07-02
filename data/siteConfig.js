@@ -89,24 +89,32 @@ export const expertiseList = [
     title: "Showcase Website",
     description:
       "Showcase / Website / Front-end / Back-end (CMS) / CSS Animations / Interactions / Digital experience / Wordpress / GSAP",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/pexels-pixabay-39559-scaled.webp",
   },
   {
     id: 1,
     title: "E-commerce Website",
     description:
       "User journey / Tree structure / Art Direction / Custom Shopify / Wix / Payement / Headless / Custom landing / Custom front-end",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/pexels-kampus-7857496-scaled.webp",
   },
   {
     id: 2,
     title: "Art Direction",
     description:
       "Visual identity / Soon / Video Editing /  Graphic charter / Graphic design / Models and prototypes /  UI & UX design",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/pexels-muhammed-cetinkaya-470437330-17115910-scaled.webp",
   },
   {
     id: 3,
     title: "Digital Experience",
     description:
       "Showcase / Website / Front-end / Back-end (CMS) / CSS Animations / Interactions / Digital experience / Shopify / Wordpress / GSAP",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/pexels-fauxels-3183153-scaled.webp",
   },
 ];
 

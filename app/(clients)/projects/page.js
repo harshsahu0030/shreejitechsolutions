@@ -1,9 +1,9 @@
-import Project from "@/components/client/main/projects/Project";
+import Projects from "@/components/client/main/projects/Projects";
 
 const page = () => {
   return (
     <>
-      <Project />
+      <Projects />
     </>
   );
 };

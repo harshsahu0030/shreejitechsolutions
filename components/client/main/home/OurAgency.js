@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CommonLink from "../../providers/CommonLink";
-import Agency02 from "@/public/agency/agency01.avif";
+import placeholderImage from "@/public/placeholderImage.webp";
 import { agencyMotive } from "@/data/siteConfig";
 
 const OurAgency = () => {
@@ -24,32 +24,47 @@ const OurAgency = () => {
       </div>
 
       {/* content  */}
-      <div className="grid xl:grid-cols-12 gap-5">
-        <div className="col-span-8  flex flex-col gap-10">
-          <div className="h-full w-full flex gap-5">
-            <div className="w-[70%]">
+      <div className="grid grid-cols-1  xl:grid-cols-12 gap-5">
+        <div className="w-full xl:col-span-8  flex flex-col gap-10">
+          <div className="w-full flex gap-2 h-[60vh] xl:h-screen ">
+            <div className="w-[70%] h-full">
               <Image
-                src={Agency02}
+                src={
+                  "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency02-scaled.webp"
+                }
                 alt="agency-image"
                 height={300}
                 width={300}
-                className="w-full object-contain "
+                className="h-full w-full object-cover"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={placeholderImage}
               />
             </div>
-            <div className="w-[30% flex flex-col justify-end gap-5">
+            <div className="w-[30%] h-full flex flex-col justify-end gap-5">
               <Image
-                src={Agency02}
+                src={
+                  "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency05-scaled.webp"
+                }
                 alt="agency-image"
                 height={300}
                 width={300}
-                className="w-full object-contain "
+                className="w-full object-cover"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={placeholderImage}
               />
               <Image
-                src={Agency02}
+                src={
+                  "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency04-scaled.webp"
+                }
                 alt="agency-image"
                 height={300}
                 width={300}
-                className="w-full object-contain "
+                className="w-full object-cover"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={placeholderImage}
               />
             </div>
           </div>
@@ -67,15 +82,20 @@ const OurAgency = () => {
           </div>
         </div>
 
-        <div className="col-span-4 flex flex-col justify-end">
+        <div className="w-full xl:col-span-4 flex flex-col justify-end items-center gap-10">
           <Image
-            src={Agency02}
+            src={
+              "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency03-scaled.webp"
+            }
             alt="agency-image"
             height={300}
             width={300}
-            className="w-full object-coontain"
+            className="w-full object-cover"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={placeholderImage}
           />
-          <p className="text-[12vw] leading-[12vw] font-semibold">2026</p>
+          <p className="text-8xl font-semibold">2026</p>
         </div>
       </div>
     </section>

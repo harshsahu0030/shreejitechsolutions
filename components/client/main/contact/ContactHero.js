@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import agency02 from "@/public/agency/agency02.avif";
 import { BsArrowDownCircle } from "react-icons/bs";
+import placeholderImage from "@/public/placeholderImage.webp";
 
 const ContactHero = () => {
   return (
@@ -21,11 +21,16 @@ const ContactHero = () => {
 
         <div className="text-xl font-medium w-full flex justify-end">
           <Image
-            src={agency02}
+            src={
+              "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency05-scaled.webp"
+            }
             alt="agency-image"
             height={300}
             width={300}
             className="object-cover"
+            preload="true"
+            placeholder="blur"
+            blurDataURL={placeholderImage}
           />
         </div>
       </div>

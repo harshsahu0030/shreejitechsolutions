@@ -2,9 +2,8 @@
 
 import { agencyVision } from "@/data/siteConfig";
 import { FaStarOfLife } from "react-icons/fa";
-import agency01 from "@/public/agency/agency01.avif";
-import agency02 from "@/public/agency/agency02.avif";
 import Image from "next/image";
+import placeholderImage from "@/public/placeholderImage.webp";
 
 const AgencyVision = () => {
   return (
@@ -41,24 +40,30 @@ const AgencyVision = () => {
           <div className="w-full flex gap-2 h-[60vh] xl:h-screen ">
             <div className="w-[70%] h-full">
               <Image
-                src={agency01}
+                src={
+                  "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/pexels-tranmautritam-285814-scaled.webp"
+                }
                 alt="agency-image"
-                height={300}
-                width={300}
+                height={800}
+                width={800}
                 className="h-full w-full object-cover"
                 loading="lazy"
                 placeholder="blur"
+                blurDataURL={placeholderImage}
               />
             </div>
             <div className="w-[30%] h-full flex items-end">
               <Image
-                src={agency02}
+                src={
+                  "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/agency02-scaled.webp"
+                }
                 alt="agency-image"
                 height={300}
                 width={300}
                 className="w-full object-cover"
                 loading="lazy"
                 placeholder="blur"
+                blurDataURL={placeholderImage}
               />
             </div>
           </div>

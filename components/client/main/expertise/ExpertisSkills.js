@@ -3,15 +3,14 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import agency02 from "@/public/agency/agency02.avif";
 import { expertiseList } from "@/data/siteConfig";
 import CommonLink from "../../providers/CommonLink";
+import placeholderImage from "@/public/placeholderImage.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ExpertisSkills = () => {
   const expertRef = useRef(null);
-
 
   //expertise
   useGSAP(
@@ -67,10 +66,14 @@ const ExpertisSkills = () => {
               {/* image  */}
               <div className="h-full w-full flex items-center">
                 <Image
-                  src={agency02}
+                  src={expertiseList?.[index]?.image}
                   alt="agency-image"
-                  sizes="(max-width: 1280px) 100vw, 50vw"
+                  width={300}
+                  height={300}
                   className="h-full w-full object-cover"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={placeholderImage}
                 />
               </div>
 

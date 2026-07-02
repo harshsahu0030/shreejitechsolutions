@@ -1,6 +1,6 @@
 import ProjectHero from "./ProjectHero";
 
-const Project = () => {
+const Projects = () => {
   return (
     <>
       <ProjectHero />
@@ -8,4 +8,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;
