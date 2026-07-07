@@ -1,9 +1,12 @@
+import { getAllProjects } from "@/api/projects/getAllProjects";
 import Projects from "@/components/client/main/projects/Projects";
 
-const page = () => {
+const page = async () => {
+  const projects = await getAllProjects();
+
   return (
     <>
-      <Projects />
+      <Projects projects={projects} />
     </>
   );
 };

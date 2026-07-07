@@ -8,7 +8,7 @@ const ContactHero = () => {
   return (
     <section
       aria-label="aria-section"
-      className="min-h-screen w-full py-25 pt-40 responsives"
+      className="h-full w-full py-25 pt-40 responsives"
     >
       {/* contact-header */}
       <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-5">

@@ -36,7 +36,7 @@ const ExpertiseHero = () => {
     <section
       ref={expertHeroRef}
       aria-label="expertise-hero"
-      className="relative min-h-screen py-25 pt-40 w-full responsives overflow-hidden"
+      className="relative h-full py-25 pt-40 w-full responsives overflow-hidden"
     >
       {/* top  */}
       <div className="flex flex-col xl:flex-row gap-5 justify-between expert-text-up">

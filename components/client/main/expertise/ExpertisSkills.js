@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ExpertisSkills = () => {
   const expertRef = useRef(null);
+  let colors = ["pink", "orange", "blue", "green"];
 
   //expertise
   useGSAP(
@@ -51,10 +52,12 @@ const ExpertisSkills = () => {
         </h2>
 
         {expertiseList?.map((item, index) => {
+          const cycleIndex = index % colors.length;
+
           return (
             <div
               key={item?.id}
-              className={`expert-${item?.id}  responsives h-full w-full  absolute top-0 left-0 pt-[25vw] xl:pt-[20vw]  grid grid-rows-3 xl:grid-cols-3  xl:grid-rows-1 gap-5 ${item?.id === 0 ? "bg-(--bg-blue)" : item?.id === 1 ? "bg-(--bg-pink)" : item?.id === 2 ? "bg-(--bg-green)" : "bg-(--bg-orange)"}`}
+              className={`expert-${item?.id}  responsives h-full w-full  absolute top-0 left-0 pt-[25vw] xl:pt-[20vw]  grid grid-rows-3 xl:grid-cols-3  xl:grid-rows-1 gap-5 bg-(--bg-${colors[cycleIndex]})`}
             >
               {/* head  */}
               <div className="h-full w-full flex items-center">
