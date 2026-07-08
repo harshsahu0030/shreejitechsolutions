@@ -4,7 +4,7 @@ import CommonLink from "./CommonLink";
 
 const CTA = ({
   label = "We challenge you to challenge us.",
-  description = "",
+  description = "we design. we develop. we deliver",
   bgColor = "orange",
 }) => {
   return (
@@ -17,9 +17,8 @@ const CTA = ({
           {label}
         </h2>
 
-        <p className="text-xl font-medium">{description}</p>
+        <p className="text-xl font-semibold uppercase">{description}</p>
 
-        <p className="font-semibold"></p>
         <CommonLink label="contact us" url="/contact" />
       </div>
     </section>

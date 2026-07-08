@@ -177,3 +177,57 @@ export const agencyMotive = [
       "And neither do we, for that matter. At the agency, good decisions have only one king to rule them: your user.",
   },
 ];
+
+export const clientsData = [
+  "Finance",
+  "Manufacturing",
+  "Legal & Law",
+  "technology & IT",
+  "Transportion & Automation",
+  "E-Commerce & Retail",
+  "Non-Profit Organisation",
+  "Tourism & Hospitality",
+  "Medical & Healthcare",
+  "Event Management",
+  "Real Estate",
+  "Many More!",
+];
+
+export const teamData = [
+  {
+    name: "Harsh",
+    role: "Founder",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/cc67766550e18d3e42bedb748c8f906d0ea2a5b9-1137x1264-1.webp",
+  },
+  {
+    name: "Shevi",
+    role: "Legal Advisor",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/d060a4ccfefac8cadbef5279024c950032cc820b-540x720-1.webp",
+  },
+  {
+    name: "Muskaan",
+    role: "Operations",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/239426d4c32e1f416692e50b6aa1441ea6127280-306x403-1.webp",
+  },
+  {
+    name: "Priyansh",
+    role: "Marketing",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/360963535ddb11ba95e920b2760659492fe00089-700x525-1.webp",
+  },
+  {
+    name: "Abhay",
+    role: "Graphic Designer",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/f9b6e6a5c214397f6fd1a59d7a7859324b8d21d7-1290x1712-1.webp",
+  },
+  {
+    name: "Rahul",
+    role: "Video Editor",
+    image:
+      "https://content.shreejitechsolutions.in/wp-content/uploads/2026/07/aa467979bd1fcf9df9da6cc7ea5411e1de922ea3-350x460-1.webp",
+  },
+];

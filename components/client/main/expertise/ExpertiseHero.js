@@ -22,7 +22,7 @@ const ExpertiseHero = () => {
         .from(".expert-circle", {
           xPercent: 50,
           yPercent: 50,
-          duration: 2,
+          duration: 1,
           stagger: 0.5,
           ease: "expo.inOut",
         });

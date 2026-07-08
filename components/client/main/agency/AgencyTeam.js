@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import agency02 from "@/public/agency/agency02.avif";
+import { teamData } from "@/data/siteConfig";
+import placeholderImage from "@/public/placeholderImage.webp";
 
 const AgencyTeam = () => {
   return (
@@ -24,19 +25,22 @@ const AgencyTeam = () => {
 
       {/* team-grid  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
-        {Array.from({ length: 6 }).map((item, index) => (
+        {teamData?.map((item, index) => (
           <div key={index} className="flex flex-col gap-5 py-5 border-b-2">
             <Image
-              src={agency02}
+              src={item?.image}
               alt="agency-image"
               height={300}
               width={300}
               className="h-full w-full object-cover"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={placeholderImage}
             />
             <div className="flex items-center justify-between">
-              <span className="text-2xl font-semibold">Harsh</span>
+              <span className="text-2xl font-semibold">{item?.name}</span>
               <span className="py-1 px-4 bg-(--bg-black) text-(--text-white) rounded-full font-medium">
-                Founder
+                {item?.role}
               </span>
             </div>
           </div>

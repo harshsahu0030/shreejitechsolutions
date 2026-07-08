@@ -1,10 +1,11 @@
+import { clientsData } from "@/data/siteConfig";
 import React from "react";
 
 const AgencyClient = () => {
   return (
     <section
       aria-label="agency-clients"
-      className="min-h-screen w-full bg-(--bg-orange) responsives py-25"
+      className="h-full w-full bg-(--bg-black) text-(--text-white) responsives py-25"
     >
       {/* team-header */}
       <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-5">
@@ -22,6 +23,16 @@ const AgencyClient = () => {
       </div>
 
       {/* client-swiper  */}
+      <div className="grid  md:grid-cols-2  xl:grid-cols-4 pt-20">
+        {clientsData?.map((item) => (
+          <div
+            key={item}
+            className="border h-[20vh]  flex items-center justify-center border-(--bg-white)/30"
+          >
+            <p className="text-2xl uppercase font-semibold">{item}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
