@@ -5,10 +5,7 @@ const ProjectHero = () => {
       className="relative h-full py-15 pt-40 w-full responsives overflow-hidden flex flex-col"
     >
       <h1 className="text-[12vw] leading-[12vw] font-semibold w-fit relative">
-        Projects{" "}
-        <sup className="border-2 rounded-full p-2 text-2xl absolute top-0 right-00">
-          99
-        </sup>
+        Projects <sup>36</sup>
       </h1>
 
       <hr className="border border-(--bg-black) my-10" />
