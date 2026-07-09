@@ -9,13 +9,13 @@ const ProjectBanner = ({ project, bgColor }) => {
   return (
     <section
       aria-label="project-banner"
-      className={`min-h-screen bg-(--bg-${bgColor}) responsives pt-30 flex flex-col gap-10`}
+      className={`h-full bg-(--bg-${bgColor}) responsives pt-30 flex flex-col gap-10`}
     >
       <Breadcrumbs />
 
       {/* heading  */}
-      <div className="flex justify-between items-center">
-        <h1 className="text-8xl font-medium">
+      <div className="flex flex-col xl:flex-row justify-between items-center gap-5">
+        <h1 className="text-5xl xl:text-8xl font-medium">
           {project?.projectsDeatil?.mainheading}
         </h1>
         <CommonLink
@@ -24,7 +24,7 @@ const ProjectBanner = ({ project, bgColor }) => {
           url={project?.projectsDeatil?.projectUrl}
         />
       </div>
-      <h2 className="text-4xl font-medium">
+      <h2 className="text-2xl  xl:text-4xl font-medium">
         {project?.projectsDeatil?.mainSubHeading}
       </h2>
 

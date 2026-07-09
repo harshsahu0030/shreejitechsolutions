@@ -1,5 +1,5 @@
 import CTA from "../../providers/CTA";
-import ProjectCards from "./project/ProjectCards";
+import ProjectCards from "./ProjectCards";
 import ProjectHero from "./ProjectHero";
 
 const Projects = ({ projects = { projects } }) => {

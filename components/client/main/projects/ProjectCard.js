@@ -8,7 +8,7 @@ const ProjectCard = ({ project, cycleIndex }) => {
 
   return (
     <div
-      className={`min-h-[60vh] xl:min-h-[80vh] w-full p-5 md:p-15 r bg-(--bg-${colors[cycleIndex]})`}
+      className={`min-h-[50vh] xl:min-h-[80vh] w-full p-5 md:p-15 r bg-(--bg-${colors[cycleIndex]})`}
     >
       <div className="h-full w-full flex flex-col items-center hover:scale-110 transitions">
         <h3 className="text-4xl font-semibold w-full text-center">

@@ -7,7 +7,7 @@ export const ProjectContent = ({ project, bgColor }) => {
       aria-label="project-content"
       className={`flex flex-col gap-10 bg-(--bg-${bgColor}) py-20`}
     >
-      <p className="text-4xl font-medium responsives">
+      <p className="text-2xl xl:text-4xl font-medium responsives">
         {project?.projectsDeatil?.projectDetails}
       </p>
 
@@ -22,13 +22,13 @@ export const ProjectContent = ({ project, bgColor }) => {
         blurDataURL={placeholderImage}
       />
 
-      <div className="w-full bg-(--bg-black) responsives flex flex-col xl:flex-row items-end gap-5 py-30">
+      <div className="h-full xl:h-[200vh] w-full bg-(--bg-black) responsives flex flex-col  xl:flex-row items-end gap-5 py-30">
         <Image
           src={project?.projectsDeatil?.desktopImage1?.node?.sourceUrl}
           alt="agency-image"
           height={1500}
           width={1500}
-          className="w-full object-contain"
+          className="h-full ll object-contain"
           preload="true"
           placeholder="blur"
           blurDataURL={placeholderImage}
@@ -38,7 +38,7 @@ export const ProjectContent = ({ project, bgColor }) => {
           alt="agency-image"
           height={1500}
           width={1500}
-          className="w-full object-contain pt-20"
+          className="h-full  object-contain pt-20"
           preload="true"
           placeholder="blur"
           blurDataURL={placeholderImage}

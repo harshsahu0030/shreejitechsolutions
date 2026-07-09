@@ -1,9 +1,9 @@
 "use client";
 
 import CustomCursor from "@/components/client/providers/CustomCursor";
-import ProjectCard from "../ProjectCard";
 import { useRef } from "react";
 import Link from "next/link";
+import ProjectCard from "./ProjectCard";
 
 const ProjectCards = ({ projects = [] }) => {
   let colors = ["pink", "orange", "blue", "green"];
