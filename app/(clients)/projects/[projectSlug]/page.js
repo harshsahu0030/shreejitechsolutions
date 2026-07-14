@@ -6,7 +6,7 @@ const page = async ({ params }) => {
 
   const project = await getSingleProject({ slug: projectSlug });
 
-  const colors = ["orange", "blue", "pink", "green"];
+  const colors = ["orange", "blue", "pink", "olive"];
   const bgColor = colors[Math.floor(Math.random() * colors.length)];
   return (
     <>

@@ -16,19 +16,19 @@ export const ProjectContent = ({ project, bgColor }) => {
         alt="agency-image"
         height={800}
         width={800}
-        className="w-full object-contain"
+        className="w-full object-contain responsives"
         preload="true"
         placeholder="blur"
         blurDataURL={placeholderImage}
       />
 
-      <div className="h-full xl:h-[200vh] w-full bg-(--bg-black) responsives flex flex-col  xl:flex-row items-end gap-5 py-30">
+      <div className="h-full w-full bg-(--bg-black) responsives flex justify-center items-end  gap-5 py-20">
         <Image
           src={project?.projectsDeatil?.desktopImage1?.node?.sourceUrl}
           alt="agency-image"
-          height={1500}
-          width={1500}
-          className="h-full ll object-contain"
+          height={200}
+          width={150}
+          className="object-contain"
           preload="true"
           placeholder="blur"
           blurDataURL={placeholderImage}
@@ -36,9 +36,9 @@ export const ProjectContent = ({ project, bgColor }) => {
         <Image
           src={project?.projectsDeatil?.desktopImage2?.node?.sourceUrl}
           alt="agency-image"
-          height={1500}
-          width={1500}
-          className="h-full  object-contain pt-20"
+          height={200}
+          width={150}
+          className="object-contain pt-20"
           preload="true"
           placeholder="blur"
           blurDataURL={placeholderImage}

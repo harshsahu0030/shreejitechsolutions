@@ -6,11 +6,9 @@ import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
 const ProjectCards = ({ projects = [] }) => {
-  let colors = ["pink", "orange", "blue", "green"];
+  let colors = ["pink", "orange", "blue", "olive"];
 
   const customRef = useRef(null);
-
-  console.log(projects);
 
   if (projects) {
     return (

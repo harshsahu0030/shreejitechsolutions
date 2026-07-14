@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ExpertisSkills = () => {
   const expertRef = useRef(null);
-  let colors = ["pink", "orange", "blue", "green"];
+  let colors = ["pink", "orange", "blue", "olive"];
 
   //expertise
   useGSAP(
@@ -20,7 +20,7 @@ const ExpertisSkills = () => {
         scrollTrigger: {
           trigger: expertRef.current,
           start: "top top",
-          end: "+3000",
+          end: "+8000",
           scrub: 1,
           pin: true,
         },

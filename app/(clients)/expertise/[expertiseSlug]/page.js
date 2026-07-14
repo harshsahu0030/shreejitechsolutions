@@ -6,7 +6,7 @@ const page = async ({ params }) => {
 
   const service = await getSingleServices({ slug: expertiseSlug });
 
-  const colors = ["orange", "blue", "pink", "green", "white"];
+  const colors = ["orange", "blue", "pink", "olive"];
   const bgColor = colors[Math.floor(Math.random() * colors.length)];
 
   return (

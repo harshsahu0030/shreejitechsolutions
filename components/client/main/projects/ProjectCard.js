@@ -4,7 +4,7 @@ import Image from "next/image";
 import placeholderImage from "@/public/placeholderImage.webp";
 
 const ProjectCard = ({ project, cycleIndex }) => {
-  let colors = ["pink", "orange", "blue", "green"];
+  let colors = ["pink", "orange", "blue", "olive"];
 
   return (
     <div
