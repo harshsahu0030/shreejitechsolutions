@@ -15,6 +15,20 @@
   --font-anton: var(--font-anton);
 }
 
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
 @layer base {
   * {
     box-sizing: border-box;
@@ -22,6 +36,8 @@
 
   body {
     overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
   }
 
   /* ::-webkit-scrollbar {
